@@ -45,7 +45,6 @@ a {
     /*margin-left: 120px ;*/
     background: url("img/img_4.png") no-repeat center center;
     background-size: cover;
-    alt: вывеска;
     min-height: 600px;
     padding: 80px 0;
 
@@ -101,7 +100,6 @@ a {
     padding: 50px 0;
     background: url("img/surface-V_JGp9lnojw-unsplash.jpg");
     background-size: cover;
-    alt: вывеска2;
 }
 
 
@@ -140,31 +138,46 @@ Footer {
     background-color: black;
 }
 
-.Footer1 h1 {
+.Net {
     color: #CFB286;
     font-family: 'Oswald', sans-serif;
     opacity: 0.8;
     padding-left: 70px;
+    font-size: 25px;
+    font-weight: 700;
 }
 
-.Footer1 h2 {
+.Footer1 a {
     color: white;
     line-height: 5px;
     font-family: 'Rajdhani', sans-serif;
     padding-left: 80px;
     padding-bottom: 15px;
     opacity: 0.8;
-    display: inline;
+    display: inline-block;
 }
 
-.Footer2 h1 {
+.Net2{
     color: #CFB286;
     font-family: 'Oswald', sans-serif;
     opacity: 0.8;
     padding-left: 70px;
+    font-size: 25px;
+    font-weight: 700;
 }
 
-.Footer2 h2 {
+
+.Number {
+    color: white;
+    line-height: 5px;
+    font-family: 'Rajdhani', sans-serif;
+    padding-left: 80px;
+    padding-bottom: 15px;
+    padding-top: 20px;
+    opacity: 0.8;
+    font-size: 18px;
+}
+.Mail {
     color: white;
     line-height: 5px;
     font-family: 'Rajdhani', sans-serif;
@@ -172,6 +185,7 @@ Footer {
     padding-bottom: 15px;
     opacity: 0.8;
     font-size: 18px;
+    padding-top: 21px;
 }
 
 body {
