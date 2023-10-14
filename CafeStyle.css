@@ -6,17 +6,12 @@ header {
     position: fixed;
     z-index: 3;
 }
-body, html {
-    /*width: 100%;*/
-    height: 100%;
-}
 
 body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin: 0;
+    padding: 0;
+    border: 0;
     background-color: black;
-    font-family: Trebuchet MS, Helvetica, serif;
 }
 
 .Logo {
