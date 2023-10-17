@@ -33,7 +33,7 @@ body {
     margin: 0;
     padding-right: 120px;
     padding-left: 120px;
-    font-size: 16px;
+    font-size: 1rem;
     color: black;
     font-family: 'Segoe UI', sans-serif;
     text-transform: uppercase;
@@ -63,7 +63,7 @@ a {
     top: 200px;
     text-align: center;
     color: #CFB286;
-    font-size: 60px;
+    font-size: 3.75rem;
     font-family: 'Script MT Bold', sans-serif;
     opacity: 0.9;
 }
@@ -74,7 +74,7 @@ a {
     top: 800px;
     text-align: center;
     color: #CFB286;
-    font-size: 20px;
+    font-size: 1.3rem;
     border-radius: 5px;
     border: 1px solid #CFB286;
     padding: 13px 25px;
@@ -94,11 +94,17 @@ a {
     margin-top: 130px;
     color: white;
     display: inline;
-    font-size: 30px;
+    font-size: 	1.87rem;
     font-family: 'Inter', sans-serif;
     margin-right: 22px;
     margin-left: 22px;
     float: left;
+}
+
+.ForU span:hover {
+    box-shadow: 0 0 0 8px rgb(207, 178, 134);
+    ransform: scale(1.2);
+    transition: box-shadow 0.5s, transform 0.5s;
 }
 
 .Banner2 {
@@ -112,7 +118,7 @@ a {
 
 
 .Banner2 blockquote {
-    font-size: 22px;
+    font-size: 1.4rem;
     padding: 10px 70px;
     font-family: 'Book Antiqua', sans-serif;
     background-color: rgba(207, 178, 134, 0.7);
@@ -123,10 +129,12 @@ a {
 }
 
 .Banner2 blockquote h1 {
-    font-size: 80px;
+    font-size: 5rem;
     font-family: 'Inter', sans-serif;
     text-align: right;
     float: right;
+    letter-spacing: 5px;
+    word-spacing: 10px;
 }
 
 .Banner2 blockquote cite a {
@@ -151,7 +159,7 @@ Footer {
     font-family: 'Oswald', sans-serif;
     opacity: 0.8;
     padding-left: 70px;
-    font-size: 25px;
+    font-size: 1.57rem;
     font-weight: 700;
 }
 
@@ -170,7 +178,7 @@ Footer {
     font-family: 'Oswald', sans-serif;
     opacity: 0.8;
     padding-left: 70px;
-    font-size: 25px;
+    font-size: 1.57rem;
     font-weight: 700;
 }
 
@@ -183,7 +191,7 @@ Footer {
     padding-bottom: 15px;
     padding-top: 20px;
     opacity: 0.8;
-    font-size: 18px;
+    font-size: 1.15rem;
 }
 .Mail {
     color: white;
@@ -192,7 +200,7 @@ Footer {
     padding-left: 80px;
     padding-bottom: 15px;
     opacity: 0.8;
-    font-size: 18px;
+    font-size: 1.15rem;
     padding-top: 21px;
 }
 
