@@ -1,6 +1,6 @@
 
 header {
-    background-color: #CFB286;
+    background-color: rgba(207, 178, 134, 0.8);
     width: 100%;
     height: 111px;
     position: fixed;
@@ -15,20 +15,20 @@ body {
 }
 
 
-.Logo {
+.logo {
     text-align: center;
     margin-top: 5px;
     border-bottom: black;
 }
 
 
-.Menu ul {
+.menu ul {
     text-align: center;
     margin-top: 14px;
     margin-bottom: 2px;
 }
 
-.Menu ul li {
+.menu ul li {
     display: inline;
     margin: 0;
     padding-right: 120px;
@@ -39,7 +39,7 @@ body {
     text-transform: uppercase;
 }
 
-.Menu ul li:hover {
+.menu ul li:hover {
     text-decoration: none;
     color: wheat;
 }
@@ -48,7 +48,7 @@ a {
     text-decoration: none;
 }
 
-.Banner1 {
+.banner1 {
     text-align: center;
     /*margin-left: 120px ;*/
     background: url("img/img_4.png") no-repeat center center;
@@ -58,7 +58,7 @@ a {
 
 }
 
-.NewCollection {
+.new-collection {
     position: relative;
     top: 200px;
     text-align: center;
@@ -68,7 +68,7 @@ a {
     opacity: 0.9;
 }
 
-.More {
+.more {
     display: inline-block;
     position: sticky;
     top: 800px;
@@ -82,16 +82,16 @@ a {
     opacity: 0.9;
 }
 
-.More:hover {
+.more:hover {
     text-decoration: none;
     color: black;
     background-color: #CFB286;
     transition: 1s;
 }
 
-.ForU span {
+.for-u span {
     text-align: center;
-    margin-top: 130px;
+    margin-top: 120px;
     color: white;
     display: inline;
     font-size: 	1.87rem;
@@ -101,13 +101,17 @@ a {
     float: left;
 }
 
-.ForU span:hover {
+.for-u span:hover {
     box-shadow: 0 0 0 8px rgb(207, 178, 134);
     ransform: scale(1.2);
     transition: box-shadow 0.5s, transform 0.5s;
 }
 
-.Banner2 {
+.for-u span picture{
+    justify-content: center;
+}
+
+.baner2 {
     margin-top: 750px;
     text-align: center;
     min-height: 600px;
@@ -117,7 +121,7 @@ a {
 }
 
 
-.Banner2 blockquote {
+.baner2 blockquote {
     font-size: 1.4rem;
     padding: 10px 70px;
     font-family: 'Book Antiqua', sans-serif;
@@ -128,7 +132,7 @@ a {
     float: right;
 }
 
-.Banner2 blockquote h1 {
+.banner2 blockquote h1 {
     font-size: 5rem;
     font-family: 'Inter', sans-serif;
     text-align: right;
@@ -137,24 +141,24 @@ a {
     word-spacing: 10px;
 }
 
-.Banner2 blockquote cite a {
+.banner2 blockquote cite a {
     text-decoration: none;
     color: black;
 }
 
-.Cat {
+.cat {
     width: 200px;
     left: 100px;
     background-color: #CFB286;
 }
 
-Footer {
+footer {
     padding-top: 75px;
     padding-bottom: 75px;
     background-color: black;
 }
 
-.Net {
+.net {
     color: #CFB286;
     font-family: 'Oswald', sans-serif;
     opacity: 0.8;
@@ -163,7 +167,7 @@ Footer {
     font-weight: 700;
 }
 
-.Footer1 a {
+.footer1 a {
     color: white;
     line-height: 5px;
     font-family: 'Rajdhani', sans-serif;
@@ -173,7 +177,7 @@ Footer {
     display: inline-block;
 }
 
-.Net2{
+.net2{
     color: #CFB286;
     font-family: 'Oswald', sans-serif;
     opacity: 0.8;
@@ -183,7 +187,7 @@ Footer {
 }
 
 
-.Number {
+.number {
     color: white;
     line-height: 5px;
     font-family: 'Rajdhani', sans-serif;
@@ -193,7 +197,7 @@ Footer {
     opacity: 0.8;
     font-size: 1.15rem;
 }
-.Mail {
+.mail {
     color: white;
     line-height: 5px;
     font-family: 'Rajdhani', sans-serif;
