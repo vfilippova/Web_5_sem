@@ -118,6 +118,7 @@ a {
     padding: 50px 0;
     background: url("img/surface-V_JGp9lnojw-unsplash.jpg");
     background-size: cover;
+    grayscale(1);
 }
 
 
