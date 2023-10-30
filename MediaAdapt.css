@@ -1,26 +1,27 @@
 @import "CafeStyle.css";
 
+@media (max-width: 1200px) {
+    .for-u {
+        display: table-row;
+    }
+}
+
+@media (max-width: 600px) {
+    .for-u{
+        display: table-row;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .banner2 {
+        width: 100%;
+    }
+}
+
 @media screen and (max-width: 1200px) {
     footer {
         width: 100%;
     }
 }
 
-@media screen and (max-width: 1000px) {
-    footer {
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    footer {
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    footer {
-        width: 100%;
-    }
-}
 
