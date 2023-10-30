@@ -6,6 +6,7 @@ header {
     height: 111px;
     position: fixed;
     z-index: 3;
+    display: table;
 }
 
 body {
@@ -31,6 +32,7 @@ body {
 }
 
 .menu ul li {
+    text-align: center;
     display: inline;
     margin: 0;
     padding-right: 120px;
@@ -52,16 +54,17 @@ a {
 
 .banner1 {
     text-align: center;
+    display: flow;
     background: url("img/img_7.png") no-repeat center;
-    background-size: contain;
+    background-size: cover;
     min-height: 600px;
-    padding: 120px 0px;
+    padding: 50px 0px;
     max-width: 100%;
 }
 
 .new-collection {
-    position: relative;
-    top: 190px;
+    margin-top: 170px;
+    margin-bottom: 250px;
     text-align: center;
     color: #CFB286;
     font-size: 3.9rem;
@@ -71,8 +74,6 @@ a {
 
 .more {
     display: inline-block;
-    position: relative;
-    top: 480px;
     text-align: center;
     color: #CFB286;
     font-size: 1.7rem;
@@ -119,11 +120,12 @@ a {
 
 .banner2 {
     margin-top: 120px;
-    text-align: center;
+    justify-content: center;
     min-height: 600px;
     padding: 50px 0;
     background: url("img/surface-V_JGp9lnojw-unsplash.jpg");
     background-size: cover;
+    display: flow;
 }
 
 
@@ -132,24 +134,29 @@ a {
     padding: 10px 70px;
     font-family: 'Book Antiqua', sans-serif;
     background-color: rgba(207, 178, 134, 0.7);
-    margin-left: 550px;
-    margin-top: 100px;
-    text-align: right;
-    float: right;
+    margin-top: 150px;
+    text-align: left;
+    display: table-row;
 }
 
 .banner2 blockquote h1 {
     font-size: 5rem;
     font-family: 'Inter', sans-serif;
-    text-align: right;
-    float: right;
+    text-align: left;
+    padding: 0px 50px;
     letter-spacing: 5px;
     word-spacing: 10px;
+}
+
+.banner2 blockquote q {
+    padding: 0px 50px;
 }
 
 .banner2 blockquote cite a {
     text-decoration: none;
     color: black;
+    text-align: left;
+    padding: 0px 50px;
 }
 
 .cat {
@@ -163,6 +170,9 @@ footer {
     padding-top: 75px;
     padding-bottom: 75px;
     background-color: #131313;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
 .net {
