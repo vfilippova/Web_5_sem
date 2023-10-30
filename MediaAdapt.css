@@ -24,27 +24,3 @@
     }
 }
 
-@media screen and (max-width: 1200px) {
-    .banner2 {
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 1000px) {
-    .banner2 {
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .banner2 {
-        width: 100%;
-    }
-
-}
-
-@media screen and (max-width: 480px) {
-    .banner2 {
-        width: 100%;
-    }
-}
