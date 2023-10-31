@@ -116,6 +116,7 @@ a {
 
 .for-u span picture{
     display: inline-block;
+    background-size: cover;
 }
 
 .banner2 {
@@ -130,7 +131,6 @@ a {
 
 
 .banner2 blockquote {
-    font-size: 1.2rem;
     padding: 10px 70px;
     font-family: 'Book Antiqua', sans-serif;
     background-color: rgba(207, 178, 134, 0.7);
@@ -150,6 +150,7 @@ a {
 
 .banner2 blockquote q {
     padding: 0px 50px;
+    font-size: 1.7rem;
 }
 
 .banner2 blockquote cite a {
@@ -157,6 +158,7 @@ a {
     color: black;
     text-align: left;
     padding: 0px 50px;
+    font-size: 1.3rem;
 }
 
 .cat {
