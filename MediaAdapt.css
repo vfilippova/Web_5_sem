@@ -65,6 +65,13 @@
     }
 }
 
+@media screen and (max-width: 1200px) {
+    .for-u span picture img {
+        width: 410px;
+        height: 410px;
+    }
+}
+
 @media screen and (max-width: 680px) {
     .for-u span picture img{
         width: 390px;
