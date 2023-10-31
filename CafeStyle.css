@@ -148,19 +148,22 @@ a {
     padding: 0px 50px;
     letter-spacing: 5px;
     word-spacing: 8px;
+    text-transform: uppercase;
+    font-weight: 700;
 }
 
 .banner2 blockquote q {
-    padding: 0px 50px;
-    font-size: 1.7rem;
+    padding: 50px 50px;
+    font-size: 1.6rem;
 }
 
 .banner2 blockquote cite a {
     text-decoration: none;
     color: black;
     text-align: left;
-    padding: 0px 50px;
+    padding: 50px 50px;
     font-size: 1.3rem;
+    margin-bottom: 20px;
 }
 
 .cat {
