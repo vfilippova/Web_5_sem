@@ -130,3 +130,8 @@
         font-size: 1.0rem;
     }
 }
+
+@media (max-width: 680px){
+    .cat{
+        display: none;
+    }
