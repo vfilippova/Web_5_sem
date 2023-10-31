@@ -172,9 +172,7 @@ footer {
     padding-top: 75px;
     padding-bottom: 75px;
     background-color: #131313;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
+    max-width: 100%;
 }
 
 .net {
