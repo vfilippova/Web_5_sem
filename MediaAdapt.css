@@ -1,6 +1,13 @@
 @import "CafeStyle.css";
 @import "MenuStyle.css";
 
+@media screen and (max-width: 1200px) {
+    .menu ul li {
+        display: inline;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+}
 
 @media screen and (max-width: 680px){
     .menu ul li {
@@ -14,6 +21,20 @@
         display: inline;
         padding-right: 6px;
         padding-left: 6px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .banner1 {
+        max-width: 100%;
+        min-height: 70px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .new-collection {
+        margin-top: 290px;
+        margin-bottom: 300px;
     }
 }
 
