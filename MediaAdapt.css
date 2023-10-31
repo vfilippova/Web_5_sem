@@ -1,11 +1,5 @@
 @import "CafeStyle.css";
 
-@media screen and (max-width: 680px){
-    .banner1 {
-        max-width: 100%;
-        min-height: 50px;
-    }
-}
 
 @media screen and (max-width: 680px){
     .menu ul li {
@@ -14,17 +8,38 @@
         padding-left: 28px;
     }
 }
+@media screen and (max-width: 480px){
+    .menu ul li {
+        display: inline;
+        padding-right: 18px;
+        padding-left: 18px;
+    }
+}
+
+@media screen and (max-width: 680px){
+    .banner1 {
+        max-width: 100%;
+        min-height: 50px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .banner1 {
+        max-width: 100%;
+        min-height: 20px;
+    }
+}
 
 @media screen and (max-width: 680px){
     .new-collection {
-        font-size: 2.6rem;
+        font-size: 2.4rem;
         margin-top: 180px;
     }
 }
 
 @media screen and (max-width: 680px){
     .more {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
 }
 
@@ -35,9 +50,16 @@
     }
 }
 
+@media screen and (max-width: 480px){
+    .for-u span picture img{
+        width: 300px;
+        height: 300px;
+    }
+}
+
 @media screen and (max-width: 600px) {
     .banner2 blockquote {
-        padding: 10px 10px;
+        padding: 5px 5px;
         display: flow;
     }
 }
@@ -49,9 +71,22 @@
     }
 }
 
+@media screen and (max-width: 480px){
+    .banner2 blockquote h1 {
+        font-size: 4.0rem;
+        padding: 4px 2px;
+    }
+}
+
 @media screen and (max-width: 600px) {
     .banner2 blockquote q {
         font-size: 1.4rem;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .banner2 blockquote q {
+        font-size: 1.2rem;
     }
 }
 
@@ -61,8 +96,8 @@
     }
 }
 
-@media screen and (max-width: 600px) {
-    footer {
-        max-width: 100%;
+@media screen and (max-width: 480px){
+    .banner2 blockquote cite a {
+        font-size: 1.0rem;
     }
 }
