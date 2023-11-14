@@ -1,51 +1,49 @@
-@import "MediaAdapt.css";
-@import "MenuStyle.css";
+@import "img";
 
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap');
 header {
-    background-color: rgba(207, 178, 134);
+    background-color: rgb(207, 178, 134);
     width: 100%;
     height: 111px;
     position: fixed;
-    z-index: 3;
     top: 0;
+    z-index: 3;
     display: table;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    align-items: center;
-    justify-content: center;
-    background-color: #131313;
 }
 
 .logo {
     text-align: center;
     margin-top: 5px;
-    border-bottom: black;
 }
-
 
 .menu ul {
     text-align: center;
     margin-top: 14px;
     margin-bottom: 2px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+
 }
 
-.menu ul li {
+.menu ul li a{
+    margin-left: 50px;
+    margin-right: 50px;
     text-align: center;
-    display: inline;
-    margin: 0;
-    padding-right: 120px;
-    padding-left: 120px;
+    /*padding-right: 120px;*/
+    /*padding-left: 120px;*/
     font-size: 1rem;
     color: black;
-    font-family: 'Segoe UI', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
     text-transform: uppercase;
+
 }
 
-.menu ul li:hover {
+.menu ul li a:hover {
     text-decoration: none;
     color: wheat;
 }
@@ -60,17 +58,18 @@ a {
     background: url("img/img_7.png") no-repeat center;
     background-size: cover;
     min-height: 600px;
-    padding: 50px 0px;
+    padding: 50px 0;
     max-width: 100%;
 }
 
+
 .new-collection {
-    margin-top: 170px;
-    margin-bottom: 250px;
+    margin-top: 180px;
+    margin-bottom: 270px;
     text-align: center;
     color: #CFB286;
     font-size: 3.9rem;
-    font-family: 'Script MT Bold', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     opacity: 0.9;
 }
 
@@ -82,7 +81,8 @@ a {
     border-radius: 5px;
     border: 1px solid #CFB286;
     padding: 13px 25px;
-    font-family: 'Segoe UI', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
     opacity: 0.9;
 }
 
@@ -95,75 +95,86 @@ a {
 
 .for-u {
     text-align: center;
-    justify-content: center;
+    justify-content: stretch;
+    display: block;
+    position: relative;
 }
 
 .for-u span {
     text-align: center;
     margin-top: 120px;
     color: white;
-    display: inline-block;
-    font-size: 	1.87rem;
+    font-size: 1.87rem;
     font-family: 'Inter', sans-serif;
+    font-weight: 400;
     margin-right: 20px;
     margin-left: 20px;
-    justify-content: center;
+    justify-content: stretch;
+    position: relative;
+    display: inline-block;
 }
 
 .for-u span:hover {
     box-shadow: 0 0 0 8px rgb(207, 178, 134);
-    ransform: scale(1.2);
+    /*transform: scale(1.2);*/
     transition: box-shadow 0.5s, transform 0.5s;
 }
 
-.for-u span picture{
-    display: inline-block;
-    background-size: cover;
+.for-u span picture {
+    justify-content: stretch;
+    position: relative;
+
 }
 
 .banner2 {
-    margin-top: 120px;
     justify-content: center;
+    margin-top: 120px;
     min-height: 600px;
     padding: 50px 0;
-    background: url("img/surface-V_JGp9lnojw-unsplash.jpg");
+    background:  url("img/surface-V_JGp9lnojw-unsplash.jpg");
     background-size: cover;
     display: flow;
+    max-width: 100%;
 }
 
-
 .banner2 blockquote {
-    padding: 10px 70px;
-    font-family: 'Book Antiqua', sans-serif;
+    padding: 5px 70px;
     background-color: rgba(207, 178, 134, 0.7);
     margin-top: 150px;
     text-align: left;
-    display: table-row;
+    display: flow;
+    font-weight: 100;
+
 }
 
 .banner2 blockquote h1 {
     font-size: 5rem;
-    font-family: 'Inter', sans-serif;
-    text-align: left;
-    padding: 0px 50px;
-    letter-spacing: 5px;
-    word-spacing: 8px;
+    font-family: 'Inter', sans-serif;    text-align: left;
+    letter-spacing: 4px;
+    word-spacing: 7px;
+    padding: 4px 45px;
+    margin-bottom: 5px;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 800;
 }
 
 .banner2 blockquote q {
+    font-family: 'Montserrat', sans-serif;
     padding: 50px 50px;
     font-size: 1.6rem;
+    font-weight: 300;
+
 }
 
 .banner2 blockquote cite a {
+    text-align: left;
     text-decoration: none;
     color: black;
-    text-align: left;
     padding: 50px 50px;
     font-size: 1.3rem;
     margin-bottom: 20px;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .cat {
@@ -198,7 +209,7 @@ footer {
     display: inline-block;
 }
 
-.net2{
+.net2 {
     color: #CFB286;
     font-family: 'Oswald', sans-serif;
     opacity: 0.8;
@@ -206,7 +217,6 @@ footer {
     font-size: 1.57rem;
     font-weight: 700;
 }
-
 
 .number {
     color: white;
@@ -218,6 +228,7 @@ footer {
     opacity: 0.8;
     font-size: 1.15rem;
 }
+
 .mail {
     color: white;
     line-height: 5px;
@@ -229,5 +240,11 @@ footer {
     padding-top: 21px;
 }
 
-
-
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    align-items: center;
+    justify-content: center;
+    background-color: #131313;
+}
