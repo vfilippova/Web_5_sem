@@ -1,40 +1,37 @@
 @media screen and (max-width: 1200px) {
-    .menu ul li {
+    .menu ul li a{
         margin-left:75px;
-        padding-right: 70px;
-        padding-left: 70px;
+        margin-right: 75px;
+        /*padding-right: 70px;*/
+        /*padding-left: 70px;*/
     }
 }
 
 @media screen and (max-width: 680px) {
-    .menu ul li {
+    .menu ul li a{
         margin-left: 10px;
-        padding-right: 20px;
-        padding-left: 20px;
+        margin-right: 10px;
+        /*padding-right: 20px;*/
+        /*padding-left: 20px;*/
     }
 }
 
 @media screen and (max-width: 495px) {
-    .menu ul li {
+    .menu ul li a{
         margin-left: 5px;
-        padding-right: 5px;
-        padding-left: 5px;
+        margin-right: 5px;
+        /*padding-right: 5px;*/
+        /*padding-left: 5px;*/
     }
 }
 
 @media screen and (max-width: 1200px) {
     .banner1 {
         max-width: 100%;
-        min-height: 70px;
+        min-height: 60px;
     }
 }
 
-@media screen and (max-width: 1200px) {
-    .new-collection {
-        margin-top: 290px;
-        margin-bottom: 300px;
-    }
-}
 
 @media screen and (max-width: 680px) {
     .banner1 {
@@ -49,6 +46,14 @@
         min-height: 10px;
     }
 }
+
+@media screen and (max-width: 1200px) {
+    .new-collection {
+        margin-top: 290px;
+        margin-bottom: 300px;
+    }
+}
+
 
 @media screen and (max-width: 680px) {
     .new-collection {
@@ -70,17 +75,27 @@
     }
 }
 
+@media screen and (max-width: 680px) {
+    .for-u span{
+        margin-top: 20px;
+    }
+}
+
 @media screen and (max-width: 480px) {
     .for-u span picture img {
         width: 300px;
         height: 300px;
     }
 }
+@media screen and (max-width: 480px) {
+    .for-u span{
+        margin-top: 15px;
+    }
+}
 
 @media screen and (max-width: 600px) {
     .banner2 blockquote {
         padding: 5px 5px;
-        display: flow;
     }
 }
 
