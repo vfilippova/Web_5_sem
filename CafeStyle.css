@@ -60,6 +60,7 @@ a {
     min-height: 600px;
     padding: 50px 0;
     max-width: 100%;
+
 }
 
 
@@ -95,36 +96,44 @@ a {
 
 .for-u {
     text-align: center;
-    justify-content: stretch;
-    display: block;
+    justify-content: center;
     position: relative;
-}
-
-.for-u span {
-    text-align: center;
+    display: grid;
+    border-collapse: collapse;
     margin-top: 120px;
-    color: white;
-    font-size: 1.87rem;
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    margin-right: 20px;
-    margin-left: 20px;
-    justify-content: stretch;
-    position: relative;
-    display: inline-block;
+    gap: 15px;
+grid-template-columns: repeat(3, 1fr);
+    background-color: #131313;
 }
 
-.for-u span:hover {
-    box-shadow: 0 0 0 8px rgb(207, 178, 134);
-    /*transform: scale(1.2);*/
+.for-u div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.for-u div picture img{
+    justify-content: stretch;
+    position: relative;
+}
+
+.for-u div p{
+text-align: center;
+    color: white;
+font-size: 1.87rem;
+font-family: 'Inter', sans-serif;
+font-weight: 400;
+margin-right: 20px;
+margin-left: 20px;
+justify-content: stretch;
+position: relative;
+}
+
+.for-u div picture :hover {
+box-shadow: 0 0 0 8px rgb(207, 178, 134);
+/*transform: scale(1.2);*/
     transition: box-shadow 0.5s, transform 0.5s;
 }
 
-.for-u span picture {
-    justify-content: stretch;
-    position: relative;
-
-}
 
 .banner2 {
     justify-content: center;
@@ -238,6 +247,27 @@ footer {
     opacity: 0.8;
     font-size: 1.15rem;
     padding-top: 21px;
+}
+
+.time {
+    color: white;
+    line-height: 5px;
+    font-family: 'Rajdhani', sans-serif;
+    padding-left: 80px;
+    padding-bottom: 10px;
+    opacity: 0.8;
+    font-size: 1.15rem;
+    padding-top: 30px;
+}
+script{
+    color: white;
+    line-height: 5px;
+    font-family: 'Rajdhani', sans-serif;
+    padding-left: 80px;
+    padding-bottom: 10px;
+    opacity: 0.8;
+    font-size: 1.15rem;
+    padding-top: 30px;
 }
 
 body {
