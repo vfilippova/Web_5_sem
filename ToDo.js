@@ -1,43 +1,41 @@
-// Функция для обработки события DOMContentLoaded
+// Функция, которая будет выполнена при загрузке DOM-дерева
 function handleDOMContentLoaded() {
     // Проверяем, есть ли значение 'add-name' в localStorage
     // Если есть, устанавливаем значение поля ввода 'add-name' равным сохраненному значению
     if (localStorage.getItem('add-name')) {
         document.getElementById('add-name').value = localStorage.getItem('add-name');
     }
-
-    // Получаем элементы формы, поля ввода 'add-name' и контейнер таблицы
+    
+// Получаем элементы формы, поля ввода 'add-name' и контейнер таблицы
     const form = document.getElementById('table-form');
-    const AddNameInput = document.getElementById('add-name');
-    const TableContainer = document.getElementById('table-container');
-
+    const addNameInput = document.getElementById('add-name');
+    const tableContainer = document.getElementById('table-container');
+    
     // Добавляем слушатель события 'submit' к форме
     form.addEventListener('submit', function (e) {
         e.preventDefault();
-
-        const AddName = AddNameInput.value;
-
+        
+        // Получаем значение поля ввода 'add-name'
+        const addName = addNameInput.value;
+        
         // Создаем новый элемент 'div' для карточки и добавляем ему класс 'card'
         const card = document.createElement('div');
         card.classList.add('card');
-
-        // Создаем новый элемент 'span' и устанавливаем его текстовое содержимое равным значению addName
+        
+        // Создаем новый элемент 'span' для текста карточки и задаем ему значение из поля ввода
         const text = document.createElement('span');
-        text.textContent = AddName;
-
-        // Добавляем элемент text внутрь элемента card
+        text.textContent = addName;
+        
+        // Добавляем элемент с текстом внутрь карточки
         card.appendChild(text);
-
-        // Добавляем элемент card внутрь контейнера таблицы
-        TableContainer.appendChild(card);
-
-        // Сохраняем значение addName в localStorage
-        localStorage.setItem('add-name', AddName);
-
-        // Очищаем поле ввода 'add-name'
-        AddNameInput.value = '';
+        
+        // Добавляем карточку в контейнер таблицы
+        tableContainer.appendChild(card);
+        
+// Сохраняем значение поля ввода в localStorage с ключом 'add-name'
+        localStorage.setItem('add-name', addName);
     });
 }
 
-// Ожидаем события DOMContentLoaded и вызываем функцию handleDOMContentLoaded
-document.addEventListener('handleDOMContentLoaded', handleDOMContentLoaded);
+// Добавляем слушатель события 'DOMContentLoaded' к объекту window и задаем ему функцию handleDOMContentLoaded
+window.addEventListener('DOMContentLoaded', handleDOMContentLoaded);
