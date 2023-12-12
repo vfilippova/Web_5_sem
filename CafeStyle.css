@@ -37,7 +37,7 @@ header {
     /*padding-right: 120px;*/
     /*padding-left: 120px;*/
     font-size: 1rem;
-    color: black ;
+    color: black;
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     text-transform: uppercase;
@@ -46,9 +46,12 @@ header {
 
 .menu ul li a:hover {
     text-decoration: none;
-    color: wheat ;
+    color: wheat;
 }
 
+.menu a.active {
+    color: wheat; /* ваш стиль для активной кнопки */
+}
 
 a {
     text-decoration: none;
@@ -131,7 +134,7 @@ a {
     position: relative;
 }
 
-.for-u div picture :hover {
+.for-u div picture img:hover {
     box-shadow: 0 0 0 8px rgb(207, 178, 134);
     /*transform: scale(1.2);*/
     transition: box-shadow 0.5s, transform 0.5s;
@@ -254,7 +257,7 @@ footer {
 }
 
 
-#footer-id{
+#footer-id {
     color: white;
     line-height: 5px;
     font-family: 'Rajdhani', sans-serif;
@@ -272,4 +275,55 @@ body {
     align-items: center;
     justify-content: center;
     background-color: #131313;
+}
+
+
+#table-form label {
+    margin-top: 180px;
+    margin-left: 25px;
+    color: #CFB286;
+    font-size: 2rem;
+    font-family: 'Inter', sans-serif;
+    opacity: 0.9;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    margin-left: 25px;
+
+}
+
+form input {
+    width: 200px;
+    padding: 5px;
+    margin-bottom: 15px;
+    margin-left: 25px;
+
+}
+
+form button {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#table-container {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 25px;
+
+}
+
+.card {
+    background-color: #f2f2f2;
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    margin-left: 25px;
 }
