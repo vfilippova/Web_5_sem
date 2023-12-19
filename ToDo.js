@@ -1,3 +1,8 @@
+//id изменить на массив
+//обнуляется поисковая строка
+//ошибка для пробелов и пустых
+
+
 //функция, которая будет выполнена при загрузке DOM-дерева
 function handleDOMContentLoaded() {
     //проверяем, есть ли значение 'add-name' в localStorage
@@ -44,6 +49,7 @@ function handleDOMContentLoaded() {
         tableContainer.appendChild(card);
         //сохраняем значение поля ввода в localStorage с ключом 'add-name'
         localStorage.setItem('add-name', addName);
+        addNameInput.value = '';
     });
 
     //восстанавливаем сохраненные карточки при загрузке страницы
