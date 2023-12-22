@@ -3,8 +3,23 @@ var swiper = new Swiper(".swiper", {
     spaceBetween: 100,
     centeredSlides: true,
 
-    navigation: { // Добавленные опции навигации
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+    mousewheel: {
+        invert: true,
+    },
+
+    scrollbar: {
+        el: '.swiper-scrollbar',
+        draggable: true,
+
+    },
+
+    keyboard: {
+        enabled: true,
+        onlyInViewport: false,
+    },
+
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
     },
 });
