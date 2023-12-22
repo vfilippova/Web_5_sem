@@ -1,55 +1,108 @@
-<html lang="ru">
-<head>
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta charset="UTF-8">
-    <title>Menu Motto</title>
-    <link rel="short icon" href="img/2.png" type="image/png">
-    <meta name="keywords"
-          content="меню мото мотто кофе с собой кофейня рядом вкусный чай напиток из матчи маття горячая айс кофе американо латте кофейные зерна ледяные лимонады лимонад с фруктам смузи">
-    <meta name="description"
-          content="Откройте для себя кофе Motto! Насладитесь свежесваренным кофе из 100% Арабики.">
-</head>
+// Функция для скрытия
+function hidePreloader() {
+    const preloader = document.getElementById("preloader");
+    preloader.style.display = "none";
+}
 
-<body>
+// Функция для выполнения запроса с помощью Fetch API и возврата Promise
+function fetchWithPromise(url, options) {
+    return new Promise((resolve, reject) => {
+        fetch(url, options).then(response => {
+            if (!response.ok) {
+                throw new Error("ошибка HTTP: " + response.status);
+            }
+            return response.json();
+        }).then(data => {
+            resolve(data);
+        }).catch(error => {
+            reject(error);
+        });
+    });
+}
 
-<link rel="stylesheet" href="CafeStyle.css">
-<link rel="stylesheet" href="css/MediaAdapt.css">
+// Функция для обработки данных и отображения их на странице
+function renderData(data) {
+    const comments = document.getElementById("comments");
 
-<script type="javascript"> alert("js подключен")</script>
-<script src="ConstButton.js"></script>
-<script src="HTTP.js"></script>
 
-<header>
-    <div class="logo"><a href="index.html"><img src="img/logo.png" height="53px" width="135px" alt="логотип"></a></div>
-    <nav class="menu">
-        <ul>
-            <li><a href="Menu.html">
-                меню
-            </a></li>
-            <li><a href="ToDo.html">
-                товары
-            </a></li>
-            <li><a href="NewWork.html">
-                работа
-            </a></li>
-            <li><a href="index.html#footer-id">
-                адрес
-            </a></li>
-        </ul>
-    </nav>
-</header>
+// Создаем таблицу
+    const table = document.createElement("table");
 
-<main>
+// Создаем заголовок таблицы
+    const thead = document.createElement("thead");
+    const headerRow = document.createElement("tr");
+    const headers = ["имя", "email"]; // Замените заголовки на свои
+    headers.forEach(headerText => {
+        const th = document.createElement("th");
+        th.textContent = headerText;
+        headerRow.appendChild(th);
+    });
+    thead.appendChild(headerRow);
+    table.appendChild(thead);
 
-    <div id="preloader">
-        <div class="loader"></div>
-    </div>
-    <button id="randomDataButton">Поиск имени и почты</button>
-    <div id="comments"></div>
-</main>
-<footer>
+    const tbody = document.createElement("tbody");
+    data.slice(0, 5).forEach(item => { // изменяем метод forEach на slice и добавляем параметры начала и конца диапазона
+        const row = document.createElement("tr");
+        const cell1 = document.createElement("td");
+        cell1.textContent = item.name; // заменяем textcontent на textContent
+        const cell2 = document.createElement("td");
+        cell2.textContent = item.body; // заменяем textcontent на textContent
+        row.appendChild(cell1);
+        row.appendChild(cell2);
+        tbody.appendChild(row);
+    });
+    table.appendChild(tbody); // заменяем appendchild на appendChild
+// Очищаем контент и добавляем таблицу
+    comments.innerHTML = '';
+    comments.appendChild(table);
+}
 
-</footer>
-</body>
-</html>
+async function randomData() {
+    try {
+        const randomId = Math.floor(Math.random() * 101) + 100; // Генерация случайного ID
+        const url = "https://jsonplaceholder.typicode.com/comments?id_gte=${randomId}";
+        const options = {method: 'GET'};
+
+
+        const response = await fetch(url, options);
+        if (!response.ok) {
+            throw new Error("error");
+        }
+
+        const data = await response.json();
+        renderData(data);
+        hidePreloader();
+    } catch (error) {
+        console.error(error);
+        const content = document.getElementById("comments");
+        content.textContent = "error";
+        hidePreloader();
+    }
+}
+
+// Ожидание события загрузки страницы
+document.addEventListener("DOMContentLoaded", () => { // Выполнение запроса при загрузке страницы
+    const url = "https://jsonplaceholder.typicode.com/comments";
+    const options = {method: "GET"};
+
+
+    fetchWithPromise(url, options)
+        .then(data => {
+            renderData(data);
+            hidePreloader();
+        })
+        .catch(error => {
+            console.error(error);
+            const content = document.getElementById("comments");
+            content.textContent = "error";
+            hidePreloader();
+        });
+
+// Находим кнопку по ее ID
+    const randomDataButton = document.getElementById("randomDataButton");
+
+// Добавляем обработчик события клика на кнопку
+    randomDataButton.addEventListener("click", () => {
+        randomData(); // Выполнение запроса при клике на кнопку
+    });
+});
